@@ -68,4 +68,14 @@ CREATE DATABASE pet_owners
 	SET first_name = 'Nithin', last_name = 'P', state = 'TG'
 	WHERE email = 'nithin_jj@gmail.com';
 	
+	UPDATE owners
+	SET first_name = 'Sindhuri'
+	WHERE email = 'avioffice1992@gmail.com';
+	
+	SELECT * FROM owners;
+	
+	-- Delete Data from Owners Table
+	DELETE FROM owners
+	WHERE email = 'bharath_jj@gmail.com';
+	
 	SELECT * FROM owners;
