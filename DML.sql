@@ -61,4 +61,11 @@ CREATE DATABASE pet_owners
 	INSERT INTO owners (first_name, last_name, state, email)
 	VALUES (null, 'Karra', 'TG', 'aviofficeavi@gmail.com');
 	
+	SELECT * FROM owners; 
+	
+	-- Update Data in Owners Table
+	UPDATE owners
+	SET first_name = 'Nithin', last_name = 'P', state = 'TG'
+	WHERE email = 'nithin_jj@gmail.com';
+	
 	SELECT * FROM owners;
