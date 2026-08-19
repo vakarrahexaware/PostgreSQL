@@ -26,7 +26,6 @@ CREATE DATABASE pet_owners
 		age INT NOT NULL
 	);
 	
-	SELECT * FROM owners;
 	
 -- 	Owners should have mobile, 
 ALTER TABLE owners
@@ -64,7 +63,35 @@ RENAME mob TO mobile;
 ALTER TABLE owners
 ADD CONSTRAINT unique_email UNIQUE(email);
 
+-- ADD age column
+ALTER TABLE owners
+ADD COLUMN age INT;
 
+-- Create Age should be always +ve num
+ALTER TABLE owners
+ADD CONSTRAINT check_age CHECK(age > 0);
+
+ALTER TABLE owners
+ALTER COLUMN mobile TYPE VARCHAR(13);
+
+
+-- Insert Data into owners Table
+INSERT INTO owners (
+		first_name,
+		last_name,
+		city ,
+		state,
+		email,
+		mobile,
+		age)
+values ('Samuel', 'Smith', 'Boston', 'MA', 'samsmith@gmail.com', '123-456-7890', 30),
+('Emma', 'Johnson', 'Seattle', 'WA', 'emjohnson@gmail.com', '234-567-8901', 25),
+('John', 'Oliver', 'New York', 'NY', 'johnoliver@gmail.com', '345-678-9012', 40),
+('Olivia', 'Brown', 'San Francisco', 'CA', 'oliviabrown@gmail.com', '456-789-0123', 28),
+('Simon', 'Davis', 'Chicago', 'IL', 'simondavis@gmail.com', '567-890-1234', 35);
+
+
+SELECT * FROM owners;
 	
 
 
