@@ -59,6 +59,9 @@ ADD COLUMN preffered_timings VARCHAR(20);
 ALTER TABLE owners
 RENAME mob TO mobile;
 
+ALTER TABLE owners
+ALTER COLUMN state TYPE CHAR(2);
+
 -- EMAIL should be unique
 ALTER TABLE owners
 ADD CONSTRAINT unique_email UNIQUE(email);
