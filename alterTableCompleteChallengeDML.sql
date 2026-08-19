@@ -114,6 +114,15 @@ INSERT INTO pets (species, full_name, age, owner_id) VALUES
 
 SELECT * FROM pets;
 
+-- Update Fluffy age to 3
+UPDATE pets
+SET age = 3
+WHERE pets.id = 2;
+
+-- Delete Olivia Brown from the table
+DELETE FROM owners
+WHERE id = 4;
+
 	
 	
 	
