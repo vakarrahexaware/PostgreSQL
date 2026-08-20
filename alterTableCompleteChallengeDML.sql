@@ -87,7 +87,7 @@ INSERT INTO owners (
 		email,
 		mobile,
 		age)
-values ('Samuel', 'Smith', 'Boston', 'MA', 'samsmith@gmail.com', '123-456-7890', 30),
+VALUES ('Samuel', 'Smith', 'Boston', 'MA', 'samsmith@gmail.com', '123-456-7890', 30),
 ('Emma', 'Johnson', 'Seattle', 'WA', 'emjohnson@gmail.com', '234-567-8901', 25),
 ('John', 'Oliver', 'New York', 'NY', 'johnoliver@gmail.com', '345-678-9012', 40),
 ('Olivia', 'Brown', 'San Francisco', 'CA', 'oliviabrown@gmail.com', '456-789-0123', 28),
