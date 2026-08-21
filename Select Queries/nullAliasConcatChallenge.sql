@@ -4,7 +4,8 @@ SELECT * FROM movies;
 SELECT * FROM movie_revenues
 WHERE international_takings IS NOT NULL
 ORDER BY international_takings DESC
-LIMIT 3;
+-- LIMIT 3;
+FETCH FIRST 3 ROW ONLY;
 
 -- Concat first and last names of directors, seperated by space and call this new column full_name
 SELECT CONCAT_WS(' ', first_name, last_name) AS full_name FROM directors;
